@@ -10,3 +10,5 @@ HTTP Codes
 8. 500 - Internal Server Error
 9. 403 - Access Forbidden
 	Error code for user not authorized to perform the operation or the resource is unavailable for some reason (e.g. time constraints, etc.).
+	
+Reference : https://www.restapitutorial.com/httpstatuscodes.html

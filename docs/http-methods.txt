@@ -1,0 +1,20 @@
+HTTP Methods
+1. GET - safe method as it does not change state of the resource. 
+	Idempotent as multiple identical requests must produce the same result every time
+	until another API (POST or PUT) has changed the state of the resource on the server.
+2. POST - used to create a new/subordinate resource into the collection of resources.
+	Responses to this method are not cacheable, unless the response includes appropriate Cache-Control or Expires header fields.
+	Neither safe nor idempotent
+3. PUT - primarily to update existing resource (if the resource does not exist then API may decide to create a new resource or not).
+	Responses to this method are not cacheable.
+	POST requests are made on resource collections whereas PUT requests are made on an individual resource.
+4. DELETE - used to delete resources (identified by the Request-URI)
+	DELETE operations are idempotent.
+	Responses to this method are not cacheable.
+5. PATCH - to make partial update on a resource
+6. HEAD - Same as GET, but transfers the status line and header section only
+7. CONNECT - Establishes a tunnel to the server identified by a given URI
+8. TRACE - Performs a message loop-back test along the path to the target resource
+
+Reference : https://restfulapi.net/http-methods/
+			https://www.tutorialspoint.com/http/http_methods.htm
