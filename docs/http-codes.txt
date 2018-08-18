@@ -1,0 +1,12 @@
+HTTP Codes
+1. 200 - Ok
+2. 201 - Created using POST/PUT
+3. 304 - Not Modified : In GET Response body empty, header have date, location, etc.
+4. 400 - Bad Request
+5. 401 - Access Forbidden /Unauthorised to method
+	Error code response for missing or invalid authentication token.
+6. 404 - Not Found : Method not available
+7. 409 - Conflict :like adding duplicate entry
+8. 500 - Internal Server Error
+9. 403 - Access Forbidden
+	Error code for user not authorized to perform the operation or the resource is unavailable for some reason (e.g. time constraints, etc.).
